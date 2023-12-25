@@ -1,4 +1,4 @@
-* {
+o* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -47,7 +47,7 @@
 
 body {
     font-family: 'Raleway', sans-serif;
-    background-image: linear-gradient(120deg, rgba(238, 232, 239, 0.212) 0%, rgba(150, 146, 146, 0.233) 100%), url("/crud/img/background.jpg");
+    background-image: linear-gradient(120deg, rgba(238, 232, 239, 0.212) 0%, rgba(150, 146, 146, 0.233) 100%), url("/proyecto2/crud/img/background.jpg");
     width: 100%;
     height: 1000px;
     background-repeat: no-repeat;
