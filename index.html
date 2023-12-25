@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/crud/css/styles.css">
+    <title>Formulario CRUD - Proyecto 2</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li><a href="#">Inicio</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="formulario-titulo">
+            <h1>Formulario CRUD</h1>
+            <p>Permite crear, ver, editar y eliminar un registro.</p>
+        </div>
+    </header>
+    <main id="registro">
+        <section class="formulario">
+            <div class="grid">
+                <form onsubmit="addData(event)">
+                    <ul>
+                        <li></li>
+                        <li>
+                            <label>Nombres :</label>
+                            <input type="text" id="name" placeholder="Nombres">
+                        </li>
+                        <li>
+                            <label>Apellidos :</label>
+                            <input type="text" id="lname" placeholder="Apellidos">
+                        </li>
+                        <li>
+                            <label>Fecha Nacimiento :</label>
+                            <input type="date" id="birthday">
+                        </li>
+                        <li>
+                            <label>Correo electrónico:</label>
+                            <input type="email" id="email" placeholder="user@mail.com">
+                        </li>
+                        <li>
+                            <label>Dirección :</label>
+                            <input type="text" id="address" placeholder="Calle, Número, Comuna, Ciudad">
+                        </li>
+                        <li>
+                            <label>Teléfono :</label>
+                            <input type="tel" id="phone" placeholder="9 0000 0000">
+                        </li>
+                        <li>
+                            <label>Descripción:</label>
+                            <textarea id="description" name="user_message"></textarea>
+                        </li>
+                        <div>
+                            <input class="button" type="submit" value="Agregar" id="add-btn">
+                            <input class="button" type="submit" value="Guardar" style="display: none;" id="edit-btn">
+                        </div>
+                    </ul>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer-registro">
+        <div>
+            <table id="table">
+            </table>
+        </div>
+    </footer>
+    <script src="/crud/js/script.js"></script>
+</body>
+
+</html>

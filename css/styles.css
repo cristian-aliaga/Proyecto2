@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    position: relative;
+    overflow: hidden;
+    background-color: #bbb9b9c5;
+    border-radius: 10px;
+}
+
+.header a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 15px;
+    background: #a1a1a38e;
+    border-radius: 8px;
+    color: #ffffff;
+}
+
+.menu {
+    max-width: 2000px;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu ul {
+    margin-top: 10px;
+    display: flex;
+}
+
+.menu ul li {
+    list-style: none;
+    margin-left: 36px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-image: linear-gradient(120deg, rgba(238, 232, 239, 0.212) 0%, rgba(150, 146, 146, 0.233) 100%), url("/crud/img/background.jpg");
+    width: 100%;
+    height: 1000px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.formulario-titulo {
+    height: 180px;
+    padding: 30px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.formulario {
+    background-color: rgba(122, 122, 122, 0.541);
+    padding: 3px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2px;
+    display: flex;
+}
+
+label {
+    display: block;
+    font: 1rem 'Fira Sans', sans-serif;
+    color: rgba(255, 255, 255, 0.856);
+    font-size: 20px;
+}
+
+input,
+label {
+    margin: 0.8rem 1;
+}
+
+form {
+    display: flex;
+    margin: 0 auto;
+    width: 700px;
+    padding: 30px;
+    border: 3px solid #cccccca6;
+    border-radius: 3%;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+form li+li {
+    display: flex;
+    margin-top: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 300px;
+    text-align: left;
+    font-size: 18px;
+}
+
+input,
+textarea {
+    font: 15px sans-serif;
+    color: #9999993a;
+    width: 300px;
+    box-sizing: border-box;
+    border: 1px solid #999;
+    font-size: 12px;
+    padding: 2px;
+    color: #999;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #727272d2;
+}
+
+textarea {
+    vertical-align: top;
+    height: 60px;
+}
+
+.button {
+    width: 100px;
+    padding: 5px 5px;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #ffffffab;
+    background-color: #aeafafe0;
+    border: 2px solid rgba(128, 128, 128, 0.589);
+    border-radius: 5px;
+    box-shadow: 0 3px #9999997e;
+}
+
+.button:hover {
+    background-color: #8b8b8b93
+}
+
+.button:active {
+    background-color: #707270ce;
+    box-shadow: 0 5px #66666677;
+    transform: translateY(1px);
+}
+
+
+.button-reg,
+.button-del {
+    height: 20px;
+    width: 60px;
+    color: #999;
+    border-radius: 3px;
+    border-color: #99999977;
+    border-bottom-color: #99999963;
+    border-bottom-width: 1px;
+}
+
+.button-del:hover {
+    background-color: rgba(255, 0, 0, 0.418);
+    color: white;
+}
+
+.button-reg:hover {
+    background-color: rgba(34, 97, 47, 0.418);
+    color: white;
+}
+
+#userregistry {
+    color: whitesmoke;
+    border: 100px;
+    list-style: none;
+    margin-left: 36px;
+}
+
+#lilist {
+    padding: 5px;
+}
+
+.footer-registro {
+    max-width: 100%;
+    border-radius: 10px;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    background-color: #bbb9b9c5;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#td_name {
+    width: 240px;
+}
+
+#td_email {
+    width: 240px;
+}
+
+th,
+td {
+    color: rgba(102, 102, 102, 0.671);
+    border: 1px solid grey;
+    border-radius: 3px;
+    font-size: 12px;
+    padding: 3px;
+    background-color: rgba(255, 255, 255, 0.541);
+    width: 60px;
+}
+
+@media screen and (max-width: 800px) {
+    header {
+        flex-direction: colum;
+    }
+
+    .formulario,
+    ul,
+    li {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .website {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .formulario-titulo,
+    h1 {
+        font-size: 18px;
+    }
+
+    img {
+        width: 50%;
+    }
+}
